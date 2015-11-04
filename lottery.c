@@ -1,4 +1,5 @@
 #include <stdio.h>
+ds
 #include <stdlib.h>
 
 int calculate_result(int white_balls[5], int power_ball)
@@ -40,6 +41,10 @@ int main(int argc, char** argv)
       return -1;
     }
 
+    if(7 == power_ball)
+    {
+    result =result * 2;
+    }
     printf("%d percent chance of winning\n", result);
 
     return 0;
