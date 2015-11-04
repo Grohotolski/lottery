@@ -1,5 +1,4 @@
 #include <stdio.h>
-ds
 #include <stdlib.h>
 
 #define LUCKY_NUMBER 7
