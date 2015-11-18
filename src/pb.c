@@ -40,7 +40,7 @@ int main(int argc, char** argv)
 {
     int balls[6];
     int count_balls =[0];
-    int favorite = 0; //this should be a bool
+    int favourite = 0; //this should be a bool
     
     for(int i=l; i<argc; i++)
     {
@@ -49,9 +49,9 @@ int main(int argc, char** argv)
     if('-' == arg[0])
     {
 
-    if(0 == stromp(arg, "-favorite"))
+    if(0 == stromp(arg, "-favourite"))
     {
-    favorite=1;
+    favourite=1;
     }
 
     
@@ -97,7 +97,7 @@ int main(int argc, char** argv)
     {
     result =result * 2;
     }
-    if(favorite)
+    if(favourite)
     {
     result=result * 2;
     }
@@ -105,7 +105,7 @@ int main(int argc, char** argv)
 
     return 0;
     usage_error:
-    fprint(stderr, "Usage: %s [-favorite] (5 white balls) power_ball\n", argv[0]);
+    fprint(stderr, "Usage: %s [-favourite] (5 white balls) power_ball\n", argv[0]);
     return -1;
 }
 
